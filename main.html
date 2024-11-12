@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Vroom Shedule</title>
+	<link rel="stylesheet" href="./src/style.css" />
+	<link rel="fontsheet" href="./fonts/fonts.css"/>
+</head>
+<body>
+	<header class="switch-page-box">
+  <h1 class="header-title">График сотрудников</h1>
+		<nav class="navigation">
+			<a href="main.html" class="title-switch">Управление сотрудниками</a>
+			<a href="src/shedule.html" class="title-switch">Расписание</a>
+		</nav>
+	</header>
+	<main>
+		<section class="add-employee">
+			<form class="add-employee_form">
+				<fieldset class="add-employee_fieldset">
+					<h2 class="add-employee_title">Имя сотрудника</h2>
+					<label class="add-employee_label">
+					<input type="test" placeholder="Лосик Валерий Валерьянович" class="add-employee_input">
+					</label>
+				</fieldset>
+				<fieldset class="add-employee_fieldset">
+					<h2 class="add-employee_title">Должность</h2>
+					<label class="add-employee_label">
+					<input type="text" placeholder="миньон" class="add-employee_input">
+					</label>
+				</fieldset>
+				<button type="submit" class="add-employee_button">Добавить</button>
+			</form>
+		</section>
+		<section class="employee-list_section">
+			<h2 class="employee-list_title">Список сотрудников</h2>
+			<ul class="employee-list">
+				<li class="employee-list_item">
+					<h3 class="employee-list_item-title">Лосик Валерий Валерьянович</h3>
+					<button type="submit" class="employee-list_delete"></button>
+				</li>
+				<li class="employee-list_item">
+					<h3 class="employee-list_item-title">Лампов Земельян Тигнарович</h3>
+					<button type="submit" class="employee-list_delete"></button>
+				</li>
+			<!--заполняется шаблонами-->
+			</ul>
+		</section>
+	</main>
+</body>
+
+<!--Шаблон-->
+	<template class="employee-list_template">
+		<li class="employee-list_item">
+			<h3 class="employee-list_item-title"></h3>
+			<button type="submit" class="employee-list_delete"></button>
+		</li>
+	</template>
+</html>
