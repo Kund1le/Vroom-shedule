@@ -21,39 +21,43 @@
 				<fieldset class="add-employee_fieldset">
 					<h2 class="add-employee_title">Имя сотрудника</h2>
 					<label class="add-employee_label">
-					<input type="test" placeholder="Лосик Валерий Валерьянович" class="add-employee_input">
+					<input type="test" placeholder=" Имя сотрудника" class="add-employee_name">
 					</label>
 				</fieldset>
 				<fieldset class="add-employee_fieldset">
 					<h2 class="add-employee_title">Должность</h2>
 					<label class="add-employee_label">
-					<input type="text" placeholder="миньон" class="add-employee_input">
+					<input type="text" placeholder=" Должность сотрудника" class="add-employee_position">
 					</label>
 				</fieldset>
-				<button type="submit" class="add-employee_button">Добавить</button>
+				<button type="button" class="add-employee_button">Добавить</button>
 			</form>
 		</section>
 		<section class="employee-list_section">
 			<h2 class="employee-list_title">Список сотрудников</h2>
 			<ul class="employee-list">
 				<li class="employee-list_item">
-					<h3 class="employee-list_item-title">Лосик Валерий Валерьянович</h3>
+					<h3 class="employee-list_item-name">Лосик Валерий Валерьянович</h3>
+					<p class="employee-list_item-position">Руководитель</p>
 					<button type="submit" class="employee-list_delete"></button>
 				</li>
 				<li class="employee-list_item">
-					<h3 class="employee-list_item-title">Лампов Земельян Тигнарович</h3>
+					<h3 class="employee-list_item-name">Лампов Земельян Тигнарович</h3>
+					<p class="employee-list_item-position">Курьер</p>
 					<button type="submit" class="employee-list_delete"></button>
 				</li>
 			<!--заполняется шаблонами-->
 			</ul>
 		</section>
 	</main>
+	<script src="./src/script.js"></script>
 </body>
 
 <!--Шаблон-->
 	<template class="employee-list_template">
 		<li class="employee-list_item">
-			<h3 class="employee-list_item-title"></h3>
+			<h3 class="employee-list_item-name"></h3>
+			<p class="employee-list_item-position"></p>
 			<button type="submit" class="employee-list_delete"></button>
 		</li>
 	</template>
